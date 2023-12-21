@@ -13,9 +13,26 @@ footer .profile-punte {
     width: clamp(4.5em, 6.5vw, 8em);
     height: clamp(4.5em, 6.5vw, 8em);
 }
-.single-about-image .overlay:nth-child(1) {
+/* .single-about-image .overlay:nth-child(1) {
     background: url(./hak\ \(1\).jpeg) center center no-repeat;
     background-size: cover;
     top: -20vh;
     height: 105%;
+} */
+
+.single-about-image .overlay:nth-child(1) {
+    background: url(./tjadp.jpeg) center center no-repeat;
+    background-size: cover;
+    top: -20vh;
+    height: 105%;
 }
+
+/* Add a media query for smaller screens (e.g., mobile) */
+@media only screen and (max-width: 767px) {
+    .single-about-image .overlay:nth-child(1) {
+        background-size: contain; /* Adjust background size for smaller screens */
+        height: 100vh; /* Adjust height as needed */
+        top: 0; /* Adjust top as needed */
+    }
+}
+
